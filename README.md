@@ -1,7 +1,7 @@
 # QRNG
 Quantum Random Number Generator
 
-[circuit diagram](img/circuit.png)
+![circuit diagram](img/circuit.png)
 
 # Motivation
 The QRNGv1 was originally a proof of concept for quantum technology applications, specifically in this case for the generation of entropy which has a broad range of uses from generating graphics to encryption keys.
