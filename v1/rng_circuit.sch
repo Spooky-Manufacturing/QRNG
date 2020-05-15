@@ -1,0 +1,112 @@
+EESchema Schematic File Version 4
+LIBS:qrng-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Quantum:Macro-Beam-Splitter BS?
+U 1 1 5EB6C00D
+P 5850 3950
+AR Path="/5EB6C00D" Ref="BS?"  Part="1" 
+AR Path="/5EB6BFF0/5EB6C00D" Ref="BS1"  Part="1" 
+F 0 "BS1" H 6078 3996 50  0000 L CNN
+F 1 "Macro-Beam-Splitter" H 6078 3905 50  0000 L CNN
+F 2 "Quantum:Macro-Beam-Splitter" H 5850 3950 50  0001 C CNN
+F 3 "" H 5850 3950 50  0001 C CNN
+	1    5850 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_PHOTO R3
+U 1 1 5EB6C2F6
+P 5100 3950
+F 0 "R3" H 4912 3904 50  0000 R CNN
+F 1 "R_PHOTO" H 4912 3995 50  0000 R CNN
+F 2 "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical" V 5150 3700 50  0001 L CNN
+F 3 "~" H 5100 3900 50  0001 C CNN
+	1    5100 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_PHOTO R2
+U 1 1 5EB6C324
+P 5850 3200
+F 0 "R2" V 6057 3200 50  0000 C CNN
+F 1 "R_PHOTO" V 5966 3200 50  0000 C CNN
+F 2 "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical" V 5900 2950 50  0001 L CNN
+F 3 "~" H 5850 3150 50  0001 C CNN
+	1    5850 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR015
+U 1 1 5EB6C581
+P 6600 4750
+F 0 "#PWR015" H 6600 4600 50  0001 C CNN
+F 1 "+3V3" H 6615 4923 50  0000 C CNN
+F 2 "" H 6600 4750 50  0001 C CNN
+F 3 "" H 6600 4750 50  0001 C CNN
+	1    6600 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4750 6600 4800
+$Comp
+L power:GND #PWR016
+U 1 1 5EB6C5EA
+P 5300 5150
+F 0 "#PWR016" H 5300 4900 50  0001 C CNN
+F 1 "GND" H 5305 4977 50  0000 C CNN
+F 2 "" H 5300 5150 50  0001 C CNN
+F 3 "" H 5300 5150 50  0001 C CNN
+	1    5300 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4950 5300 4950
+Wire Wire Line
+	5300 4950 5300 5150
+Wire Wire Line
+	6600 4800 6400 4800
+Wire Wire Line
+	5100 4800 5100 4100
+Wire Wire Line
+	6000 3200 6400 3200
+Wire Wire Line
+	6400 3200 6400 4800
+Connection ~ 6400 4800
+Wire Wire Line
+	6400 4800 5100 4800
+Text GLabel 5100 3800 1    50   Input ~ 0
+ADC1
+Text GLabel 5700 3200 0    50   Input ~ 0
+ADC2
+Wire Wire Line
+	6100 4950 6400 4950
+Wire Wire Line
+	6400 4950 6400 5100
+Text GLabel 6400 5100 0    50   Input ~ 0
+trigger
+$Comp
+L Device:LED D2
+U 1 1 5EB8660B
+P 5950 4950
+F 0 "D2" H 5941 4695 50  0000 C CNN
+F 1 "LED" H 5941 4786 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 5950 4950 50  0001 C CNN
+F 3 "~" H 5950 4950 50  0001 C CNN
+	1    5950 4950
+	1    0    0    1   
+$EndComp
+$EndSCHEMATC

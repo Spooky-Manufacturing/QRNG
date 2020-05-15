@@ -1,13 +1,15 @@
 # QRNG
 Quantum Random Number Generator
 
-![circuit diagram](img/circuit.png)
+![exploded v1](img/v1_exploded.gif)
 
 # Motivation
-The QRNGv1 was originally a proof of concept for quantum technology applications, specifically in this case for the generation of entropy which has a broad range of uses from generating graphics to encryption keys.
+The QRNGv1 (Now QRNG_BASIC) was originally a proof of concept for quantum technology applications, specifically in this case for the generation of entropy which has a broad range of uses from generating graphics to encryption keys.
 
 # How It Works
 The device uses a polarizing beam splitter to split a laser pulse into two beams with a 50/50 probability of a photon in the beam traveling either path. The photons actually travel as a wave, meaning they both pass through and are reflected by the beam splitter. This creates what's known as the superposition of light where the light remains in both paths able to interfere with itself until it is measured and collapses out of superposition.
+
+![qrng schematic](img/circuit.png)
 
 The equivalent quantum logic gate would be the Hadamard gate, in QASM code:
 
