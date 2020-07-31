@@ -1,0 +1,15 @@
+Designator,Quantity,Value,Cmp name,Footprint,LCSC Part #
+"C1, ",1,4.7uF,C_Small,Capacitor_SMD:C_0402_1005Metric,C23733
+"C9, C8, ",2,10uF,C_Small,Capacitor_SMD:C_0402_1005Metric,C15525
+"C10, C2, C3, C4, C5, C6, C7, ",7,100nF,C_Small,Capacitor_SMD:C_0402_1005Metric,C1525
+"C11, ",1,10nF,C_Small,Capacitor_SMD:C_0402_1005Metric,C14195
+"C12, C13, ",2,30pF,C_Small,Capacitor_SMD:C_0603_1608Metric,C22397
+"D1, ",1,B5819W,ZENER,Diode_SMD:D_SOD-123,C8598
+"D2, ",1,LED,LED,LED_SMD:LED_0805_2012Metric,C24499
+"FB1, FB2, ",2,100ohm @ 100mHz,Ferrite_Bead_Small,Inductor_SMD:L_0805_2012Metric,C1015
+"R4, ",1,270,R_Small_US,Resistor_SMD:R_0603_1608Metric,C22965
+"R5, ",1,100,R_Small_US,Resistor_SMD:R_0603_1608Metric,C25803
+"U1, ",1,AMS1117,AMS1117,Package_TO_SOT_SMD:SOT-223-3_TabPin2,C6186
+"U2, ",1,STM32F103C8Tx,STM32F103C8Tx,Package_QFP:LQFP-48_7x7mm_P0.5mm,C8734
+"U3, ",1,W25N01GV,W25Q64FWZP,Package_SON:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4mm,C88868
+"Y1, ",1,8 MHz,Crystal,Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm_HandSoldering,C115962
