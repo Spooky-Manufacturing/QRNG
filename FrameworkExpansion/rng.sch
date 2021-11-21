@@ -1,0 +1,130 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L quantum_primitives:BeamSplitter BS1
+U 1 1 6196EF8D
+P 5150 3300
+F 0 "BS1" H 5394 3346 50  0000 L CNN
+F 1 "BeamSplitter" H 5394 3255 50  0000 L CNN
+F 2 "" H 5150 3300 50  0001 C CNN
+F 3 "" H 5150 3300 50  0001 C CNN
+	1    5150 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_PHOTO R4
+U 1 1 61970BDD
+P 6000 3350
+F 0 "R4" H 6070 3396 50  0000 L CNN
+F 1 "R_PHOTO" H 6070 3305 50  0000 L CNN
+F 2 "OptoDevice:R_LDR_5.2x5.2mm_P3.5mm_Horizontal" V 6050 3100 50  0001 L CNN
+F 3 "~" H 6000 3300 50  0001 C CNN
+	1    6000 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR022
+U 1 1 61971E2B
+P 5750 2900
+F 0 "#PWR022" H 5750 2750 50  0001 C CNN
+F 1 "+3V3" H 5765 3073 50  0000 C CNN
+F 2 "" H 5750 2900 50  0001 C CNN
+F 3 "" H 5750 2900 50  0001 C CNN
+	1    5750 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3800 5400 3800
+Wire Wire Line
+	6000 3200 5750 3200
+Wire Wire Line
+	5750 2900 5750 3200
+Connection ~ 5750 3200
+Wire Wire Line
+	5750 3200 5750 3800
+Wire Wire Line
+	4500 3600 5400 3600
+Wire Wire Line
+	5400 3600 5400 3800
+Connection ~ 5400 3800
+Wire Wire Line
+	5400 3800 5250 3800
+$Comp
+L power:GND #PWR021
+U 1 1 61972EEF
+P 4500 2400
+F 0 "#PWR021" H 4500 2150 50  0001 C CNN
+F 1 "GND" H 4505 2227 50  0000 C CNN
+F 2 "" H 4500 2400 50  0001 C CNN
+F 3 "" H 4500 2400 50  0001 C CNN
+	1    4500 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q1
+U 1 1 6197387E
+P 4400 2800
+F 0 "Q1" H 4591 2754 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 4591 2845 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 2900 50  0001 C CNN
+F 3 "~" H 4400 2800 50  0001 C CNN
+	1    4400 2800
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 619774DF
+P 4500 2500
+F 0 "R2" H 4568 2546 50  0000 L CNN
+F 1 "10k" H 4568 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4500 2500 50  0001 C CNN
+F 3 "~" H 4500 2500 50  0001 C CNN
+	1    4500 2500
+	1    0    0    -1  
+$EndComp
+Text HLabel 4950 3800 0    50   Input ~ 0
+V
+Text HLabel 6000 3500 3    50   Input ~ 0
+H
+Text HLabel 4200 2800 0    50   Input ~ 0
+T
+$Comp
+L Device:R_PHOTO R3
+U 1 1 6197091C
+P 5100 3800
+F 0 "R3" V 4775 3800 50  0000 C CNN
+F 1 "R_PHOTO" V 4866 3800 50  0000 C CNN
+F 2 "OptoDevice:R_LDR_5.2x5.2mm_P3.5mm_Horizontal" V 5150 3550 50  0001 L CNN
+F 3 "~" H 5100 3750 50  0001 C CNN
+	1    5100 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 61B0B6E5
+P 4500 3250
+F 0 "D1" V 4539 3132 50  0000 R CNN
+F 1 "LED" V 4448 3132 50  0000 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 4500 3250 50  0001 C CNN
+F 3 "~" H 4500 3250 50  0001 C CNN
+	1    4500 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 3000 4500 3100
+Wire Wire Line
+	4500 3400 4500 3600
+$EndSCHEMATC

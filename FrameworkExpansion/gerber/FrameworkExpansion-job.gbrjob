@@ -1,0 +1,51 @@
+{
+  "Header":
+  {
+    "GenerationSoftware":
+    {
+      "Vendor":      "KiCad",
+      "Application": "Pcbnew",
+      "Version":     "5.1.12-84ad8e8a86~92~ubuntu18.04.1"
+    },
+    "CreationDate":  "2021-11-19T03:32:58-05:00"
+  },
+  "GeneralSpecs":
+  {
+    "ProjectId":
+    {
+      "Name": "FrameworkExpansion",
+      "GUID": "4672616d-6577-46f7-926b-457870616e73",
+      "Revision": "X1"
+    },
+    "Size":
+    {
+      "X": 24.050,
+      "Y": 27.300
+    },
+    "LayerNumber": 2,
+    "BoardThickness":  0.800
+  },
+  "DesignRules":
+  [
+    {
+      "Layers": "Outer",
+      "PadToPad":  0.160,
+      "PadToTrack":  0.160,
+      "TrackToTrack":  0.160,
+      "MinLineWidth":  0.152,
+      "TrackToRegion":  0.160,
+      "RegionToRegion":  0.160
+    }
+  ],
+  "FilesAttributes":
+  [
+    {
+      "Path":  "FrameworkExpansion-Edge_Cuts.gbr",
+      "FileFunction":  "Profile",
+      "FilePolarity":  "Positive"
+    }
+  ],
+  "MaterialStackup":
+  [
+  ]
+}
