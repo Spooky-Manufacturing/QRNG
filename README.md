@@ -29,7 +29,7 @@ measure q[1] -> c0;
 # Software Requirements
 - Arduino IDE (for programming the Arduino)
 
-# Firmare
+# Firmware
 Firmware can be found in the respective design folders labelled according to version. The schematics as well are labelled with the version of firmware which supports them.
 
 # How To Use
